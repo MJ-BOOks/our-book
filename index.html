@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Our Book</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body class="home-page">
+
+    <main class="book-cover">
+
+        <p class="cover-small">
+            OUR STORY
+        </p>
+
+
+        <h1>OUR BOOK</h1>
+
+
+        <div class="cover-line"></div>
+
+
+        <p class="cover-subtitle">
+            M. - J.
+        </p>
+
+
+        <div
+            id="login-screen"
+            style="
+                width: 100%;
+                max-width: 420px;
+            "
+        >
+
+            <div class="add-form">
+
+                <label for="loginEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                >
+
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                >
+
+
+                <button
+                    type="button"
+                    onclick="login()"
+                >
+                    ENTER OUR BOOK
+                </button>
+
+
+                <p
+                    id="loginMessage"
+                    style="
+                        margin: 10px 0 0;
+                        color: #756b5d;
+                        font-size: 14px;
+                        text-align: center;
+                    "
+                ></p>
+
+            </div>
+
+        </div>
+
+
+        <p class="cover-footer">
+            ILY
+        </p>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
