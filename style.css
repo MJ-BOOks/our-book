@@ -833,13 +833,3 @@ body:not(.home-page) .add-button {
 .item:hover {
     border-color: #b7aa93;
 }
-
-.user-name {
-    position: absolute;
-    top: 30px;
-    right: 35px;
-    font-size: 14px;
-    color: #756b5d;
-    letter-spacing: 1px;
-    z-index: 2;
-}
