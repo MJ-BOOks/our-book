@@ -187,13 +187,9 @@ async function logout() {
 
 async function startBook() {
 
-    const {
-        data: { user }
-    } = await supabaseClient.auth.getUser();
-
     book = await loadBook();
 
-    showHome(user);
+    showHome();
 }
 
 
@@ -359,13 +355,7 @@ async function saveBook() {
 // HOME
 // ========================================
 
-ffunction showHome(user) {
-
-    let userName = "M.";
-
-    if (user && user.email === "minjinwoo.albert@gmail.com") {
-        userName = "J.";
-    }
+function showHome() {
 
     document.body.className = "home-page";
 
@@ -374,11 +364,7 @@ ffunction showHome(user) {
 
         <main class="book-cover">
 
-            <div class="user-name">
-                ${userName}
-            </div>
-			
-			<p class="cover-small">
+            <p class="cover-small">
                 OUR STORY
             </p>
 
@@ -1413,11 +1399,7 @@ function deleteItem(
 
 function goHome() {
 
-    supabaseClient.auth.getUser().then(({ data }) => {
-
-        showHome(data.user);
-
-    });
+    showHome();
 }
 
 
